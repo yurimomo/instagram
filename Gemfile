@@ -43,3 +43,9 @@ group :development, :test do
   gem 'spring'
 end
 
+ gem 'carrierwave'
+
+ gem 'mini_magick'
+
+ gem 'devise'
+
