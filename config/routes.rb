@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
 
+
+  get 'top/index'
+
   devise_for :users
   get 'pictures' => 'pictures#index'
+  
 
-  root  "pictures#index"
+  root  "top#index"
 
   resources :pictures, only: [:index, :new, :create, :destroy, :update, :edit]
   # The priority is based upon order of creation: first created -> highest priority.

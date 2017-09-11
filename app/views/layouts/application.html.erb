@@ -1,16 +1,39 @@
-      <p class="notice"><%= notice %></p>
+<!--       <p class="notice"><%= notice %></p> -->
 
 <!DOCTYPE html>
 <html>
 <head>
   <title>Insta</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+ <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
 </head>
 <body>
 
+ <header>
+ 
+
+ </header>
+
 <%= yield %>
 
+<footer>
+ 	<!-- <nav class="nav-footer"> -->
+ 		<ul>
+ 			<li>INSTAGRAMについて</li>
+ 			<li>サポート</li>
+ 			<li>ブログ</li>
+ 			<li>プレス</li>
+ 			<li>API</li>
+ 			<li>求人</li>
+ 			<li>プライバシー</li>
+ 			<li>利用規約</li>
+ 			<li>ディレクトリ</li>
+ 			<li>言語</li>
+ 		</ul>
+ 	<!-- </nav> -->
+ </footer>
 </body>
 </html>
