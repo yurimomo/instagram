@@ -2,9 +2,12 @@ Rails.application.routes.draw do
 
 
 
-  get 'top/index'
+  devise_for :users, controllers: {
+    registrations: "users/registrations",
 
-  devise_for :users
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
+
   get 'pictures' => 'pictures#index'
   
 
