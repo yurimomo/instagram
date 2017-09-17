@@ -4,7 +4,7 @@
 <h2>Picture一覧</h2>
 
 <% @pic.each do |pic| %>
-	
+	<%= image_tag(picture.picture) %>
 
 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>

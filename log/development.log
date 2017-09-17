@@ -40462,3 +40462,42 @@ ActionController::RoutingError (No route matches [GET] "/normalize.css"):
   Rendered /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-09-15 10:46:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (12.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 661ms (Views: 615.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/application.self-4ede7424f1feae6efa687d144d6d68713c98e7e5c7581b4ef9d1ca92f14704a5.css?body=1" for ::1 at 2017-09-15 10:46:50 +0900
+
+
+Started GET "/users/auth/twitter" for ::1 at 2017-09-15 10:47:26 +0900
+
+
+Started GET "/users/auth/twitter" for ::1 at 2017-09-15 10:47:26 +0900
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=na0ShAAAAAAA2RcNAAABXoM4CWA&oauth_verifier=frl7Cw63SDfkdBvDA5Oo586Zr8731VrY" for ::1 at 2017-09-15 10:47:27 +0900
+Processing by Users::OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"na0ShAAAAAAA2RcNAAABXoM4CWA", "oauth_verifier"=>"frl7Cw63SDfkdBvDA5Oo586Zr8731VrY"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 LIMIT 1  [["provider", "twitter"], ["uid", "1600240303"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2017-09-15 01:47:28.763092"], ["sign_in_count", 2], ["updated_at", "2017-09-15 01:47:28.765485"], ["id", 2]]
+  [1m[36m (11.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 38ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-15 10:47:28 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (6.7ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 62ms (Views: 45.8ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/application.self-4ede7424f1feae6efa687d144d6d68713c98e7e5c7581b4ef9d1ca92f14704a5.css?body=1" for ::1 at 2017-09-15 10:47:28 +0900
