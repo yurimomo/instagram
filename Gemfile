@@ -57,5 +57,5 @@ end
  gem 'omniauth'
  gem 'omniauth-twitter'
  gem 'omniauth-facebook'
-
-
+ gem 'rails_admin'
+ gem 'cancan'
