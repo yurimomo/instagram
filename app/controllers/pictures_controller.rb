@@ -25,10 +25,13 @@ class PicturesController < ApplicationController
   end
 
   def edit
+    @pic = Picture.find(params[:id])
   end
 
   def update
-  	@pic.update(pictures_params)
+    @pic = Picture.find(params[:id])
+    @pic.update(pictures_params)
+  	# @pic.update(pictures_params)
   	redirect_to pictures_path, notice: "編集しました"
   end
 
@@ -36,7 +39,7 @@ class PicturesController < ApplicationController
   private
 
    def pictures_params
-   	params.require(:picture).permit(:content)
+   	params.require(:picture).permit(:content, :picture)
    	
    end
 

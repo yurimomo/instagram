@@ -40734,3 +40734,2690 @@ CanCan::AccessDenied (You are not authorized to access this page.):
   [1m[35m (0.3ms)[0m  BEGIN
   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2017-09-17 06:56:20.550782"], ["id", 1]]
   [1m[35m (1.6ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2017-09-18 11:08:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (7.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (5455.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 5649ms (Views: 5630.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:08:41 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:08:41 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/hoge" for ::1 at 2017-09-18 11:08:46 +0900
+
+ActionController::RoutingError (No route matches [GET] "/hoge"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/" for ::1 at 2017-09-18 11:12:58 +0900
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:12:58 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:12:58 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 11:13:08 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.6ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (68.8ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 2.9ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcadf4fb198>:0x007fcadf4f9550>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+
+
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:13:10 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:13:10 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-09-18 11:13:16 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y6VeeubRQ1BVjElcRgWtJQ4jq5/8Sh6yXYXM+tvxHekXGAGHgmOjxUOoCFW/ExTiRz5SCElOkWFhVMW3fmGRTQ=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-09-18 11:13:16 +0900
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:13:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:13:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 11:13:19 +0900
+Processing by PicturesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-09-18 11:13:19 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-09-18 11:13:28 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J/rDBYa++GxCLmElL3JmtPaRJjaULzT/GZALoVKEKy1t1LvvLmJpKveItWlqfOge/gtFwcUKZeBrlMVSOs1gJw==", "user"=>{"email"=>"yu@yahoo.co.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "yu@yahoo.co.jp"]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J/rDBYa++GxCLmElL3JmtPaRJjaULzT/GZALoVKEKy1t1LvvLmJpKveItWlqfOge/gtFwcUKZeBrlMVSOs1gJw==", "user"=>{"email"=>"yu@yahoo.co.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 249ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-09-18 11:13:32 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-09-18 11:13:46 +0900
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sDFeD5QoY5T+XzuZwTkapE1OkYt9N4HvKgbCrpck59n6HyblPPTy0kv579WEN5QORdTyfCwS0PBYAgxd/22s0w==", "user"=>{"email"=>"yu@yahoo.co.jp", "name"=>"yuriko", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"サインアップ"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'yu@yahoo.co.jp' LIMIT 1[0m
+  [1m[35mSQL (24.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "name", "uid", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["email", "yu@yahoo.co.jp"], ["encrypted_password", "$2a$11$Mj1p4gindm75TdX3bAawcuoh5wTTh26YKK3LkvHIGWuAKYiCDwL.a"], ["name", "yuriko"], ["uid", "4e06e0b7-2525-4042-90d4-ab83d015835a"], ["created_at", "2017-09-18 02:13:46.803039"], ["updated_at", "2017-09-18 02:13:46.803039"], ["confirmation_token", "Jfz1c1pkZsqB921JmEKS"], ["confirmation_sent_at", "2017-09-18 02:13:46.803372"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 230.7ms
+
+Sent mail to yu@yahoo.co.jp (18.3ms)
+Date: Mon, 18 Sep 2017 11:13:47 +0900
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: yu@yahoo.co.jp
+Message-ID: <59bf2bdb163c9_e37c3fe56cdfed783509e@mba.local.mail>
+Subject: =?UTF-8?Q?=E3=82=A2=E3=82=AB=E3=82=A6=E3=83=B3=E3=83=88=E3=81=AE=E6=9C=89=E5=8A=B9=E5=8C=96=E3=81=AB=E3=81=A4=E3=81=84=E3=81=A6?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome yu@yahoo.co.jp!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Jfz1c1pkZsqB921JmEKS">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 515ms (ActiveRecord: 26.6ms)
+
+
+Started GET "/" for ::1 at 2017-09-18 11:13:47 +0900
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:13:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:13:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/top.scss" for ::1 at 2017-09-18 11:13:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/top.scss"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/normalize.css" for ::1 at 2017-09-18 11:13:47 +0900
+
+ActionController::RoutingError (No route matches [GET] "/normalize.css"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/ichinomiyayuriko/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 11:13:55 +0900
+Processing by PicturesController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-09-18 11:13:55 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2017-09-18 11:14:04 +0900
+
+
+Started GET "/users/auth/twitter" for ::1 at 2017-09-18 11:14:04 +0900
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=AydyBAAAAAAA2RcNAAABXpLDbMY&oauth_verifier=cSqY149SWspe2uHHSzX3B4Oz61C5Zblh" for ::1 at 2017-09-18 11:14:06 +0900
+Processing by Users::OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"AydyBAAAAAAA2RcNAAABXpLDbMY", "oauth_verifier"=>"cSqY149SWspe2uHHSzX3B4Oz61C5Zblh"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 LIMIT 1  [["provider", "twitter"], ["uid", "1600240303"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2017-09-15 01:47:28.763092"], ["current_sign_in_at", "2017-09-18 02:14:08.023551"], ["sign_in_count", 3], ["updated_at", "2017-09-18 02:14:08.025487"], ["id", 2]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 16ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 11:14:08 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.7ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (58.9ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcadf4fb198>:0x007fcae4a63388>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 11:19:23 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae3ada678>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 11:19:28 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae6d78ff8>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 11:25:43 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 3.2ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae75c8fc8>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:32:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (69.9ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcae4a91148>:0x007fcada0c0c40>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:32:49 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (59.5ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcae4a91148>:0x007fcae74e9dc8>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254655952060'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:37:47 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (57.1ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcae4a91148>:0x007fcae3a76808>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_url(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254689757600'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254689757600'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:37:50 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.7ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (64.9ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined local variable or method `picture' for #<#<Class:0x007fcae4a91148>:0x007fcae686aa98>
+Did you mean?  picture_url):
+    4: <h2>Picture一覧</h2>
+    5: 
+    6: <% @pic.each do |pic| %>
+    7: 	<%= image_tag(picture.picture) %>
+    8: 
+    9: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
+   10: 	<%= link_to "削除" , picture_url(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
+  app/views/pictures/index.html.erb:7:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254689757600'
+  app/views/pictures/index.html.erb:6:in `_app_views_pictures_index_html_erb___4412398265510965471_70254689757600'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:39:16 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.7ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 118ms (Views: 113.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 11:43:09 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 11:43:11 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae26bf030>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 12:02:58 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 127ms (Views: 100.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/pictures/" for ::1 at 2017-09-18 12:04:38 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.3ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...していいですか？'} class);@output_buffer.safe_append='
+...                                ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/pictures/index.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+  app/views/pictures/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/pictures/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/pictures/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:04:46 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...していいですか？'} class);@output_buffer.safe_append='
+...                                ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/pictures/index.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+  app/views/pictures/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/pictures/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/pictures/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:06:16 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+...していいですか？'} class: 'btn btn-default');@output_...
+...                                ^):
+  app/views/pictures/index.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:06:17 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+...していいですか？'} class: 'btn btn-default');@output_...
+...                                ^):
+  app/views/pictures/index.html.erb:11: syntax error, unexpected keyword_class, expecting ')'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:08:25 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:12:48 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 109ms (Views: 106.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:14:56 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:15:20 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:17:10 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 160ms (Views: 156.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pictures.self-ba4193ba4e09c203a4e838b7936f2caf36c1b0b1cc91aebd36ae24bcbda486cf.css?body=1" for ::1 at 2017-09-18 12:17:10 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:23:06 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `picture' for #<Picture::ActiveRecord_Relation:0x007fcae39c91d0>
+Did you mean?  capture):
+     6: <h2>Picture一覧</h2>
+     7: 
+     8: <% @pic.each do |pic| %>
+     9: 	<%= image_tag @pic.picture.url %>
+    10: 
+    11: 	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'}, class: 'btn btn-default'%>
+    12: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'},class: 'btn btn-default' %>
+  app/views/pictures/index.html.erb:9:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254689311440'
+  app/views/pictures/index.html.erb:8:in `_app_views_pictures_index_html_erb___4412398265510965471_70254689311440'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 12:26:08 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 102ms (Views: 99.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/pictures.self-ba4193ba4e09c203a4e838b7936f2caf36c1b0b1cc91aebd36ae24bcbda486cf.css?body=1" for ::1 at 2017-09-18 12:26:08 +0900
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:26:11 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (3.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 3.3ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcada7b2648>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:38:39 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae74ba208>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    14:    </div>
+    15:    <% end %>
+    16:   <%= f.file_field :content %>
+    17:   <%= f.hidden_field :content_cache %>
+    18:  <%= f.text_field :content %>
+    19: 
+    20: 
+  app/views/pictures/new.html.erb:17:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254689961380'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:47:47 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `merge' for :picture:Symbol):
+    13:        </ul>
+    14:        </div>
+    15:        <% end %>
+    16:   <%= f.file_field :content,:picture %>
+    17: 
+    18:   <%= f.hidden_field :content_cache, :picture_cache %>
+    19:   <%= f.text_field :content %>
+  app/views/pictures/new.html.erb:16:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254716353280'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254716353280'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:51:59 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/new.html.erb:16: syntax error, unexpected ':', expecting ')'
+...ppend=( f.file_field :content :picture );@output_buffer.safe...
+...                               ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/new.html.erb:18: syntax error, unexpected ':', expecting ')'
+...f.hidden_field :content_cache :picture_cache );@output_buffe...
+...                               ^):
+  app/views/pictures/new.html.erb:16: syntax error, unexpected ':', expecting ')'
+  app/views/pictures/new.html.erb:18: syntax error, unexpected ':', expecting ')'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:53:09 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcad8f73cf8>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    17:   <%= f.file_field :picture %>
+    18: 
+    19: 
+    20:   <%= f.hidden_field :content_cache %>
+    21:   <%= f.hidden_field :picture_cache %>
+    22:   <%= f.text_field :content %>
+    23: 
+  app/views/pictures/new.html.erb:20:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254600098160'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254600098160'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 12:54:42 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 3.6ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcadf613580>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    17:   <%= f.file_field :picture %>
+    18: 
+    19: 
+    20:   <%= f.hidden_field :content_cache %>
+    21:   <%= f.hidden_field :picture_cache %>
+    22:   <%= f.text_field :content %>
+    23: 
+  app/views/pictures/new.html.erb:20:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254600098160'
+  app/views/pictures/new.html.erb:3:in `_app_views_pictures_new_html_erb__3655833961667164581_70254600098160'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:14:47 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (38.0ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 3.4ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae2901f00>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    17:   <%= f.file_field :picture %>
+    18: 
+    19: 
+    20:   <%= f.hidden_field :content_cache %>
+    21:   <%= f.hidden_field :picture_cache %>
+    22:   <%= f.text_field :content %>
+    23: 
+  app/views/pictures/new.html.erb:20:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254611733020'
+  app/views/pictures/new.html.erb:14:in `_app_views_pictures_new_html_erb__3655833961667164581_70254611733020'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:15:47 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `content_cache' for #<Picture:0x007fcae166f090>
+Did you mean?  content_change
+               content_changed?
+               content
+               content_was):
+    17:   <%= f.file_field :picture %>
+    18: 
+    19: 
+    20:   # <%= f.hidden_field :content_cache %>
+    21:   <!-- <%= f.hidden_field :picture_cache %> -->
+    22:   <%= f.text_field :content %>
+    23: 
+  app/views/pictures/new.html.erb:20:in `block in _app_views_pictures_new_html_erb__3655833961667164581_70254670866920'
+  app/views/pictures/new.html.erb:14:in `_app_views_pictures_new_html_erb__3655833961667164581_70254670866920'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:16:05 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 143ms (Views: 139.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:19:23 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hYoz+XeiQySwV3mXUrPNNVPzf6wD1MnuSTTwHh7mNxzPf99l6gcA9VuM+2gFBHdvspnW8dBIDmx16iVxK0mAAg==", "picture"=>{"content"=>""}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered pictures/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 142ms (Views: 133.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:19:34 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uZ6oSEHJPEJDFR+UsQljTY9N5sig1mbLYFwOw+irJtPza0TU3Gx/k6jOnWvmvtkXbidPlXNKoUlcgtus3QSRzQ==", "picture"=>{"content"=>"ぐでたま"}, "commit"=>"登録する"}
+  [1m[35mUser Load (5.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "pictures" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "ぐでたま"], ["created_at", "2017-09-18 04:19:34.035668"], ["updated_at", "2017-09-18 04:19:34.035668"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 21ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:19:34 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 74ms (Views: 71.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:19:39 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 68.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:19:58 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hYoz+XeiQySwV3mXUrPNNVPzf6wD1MnuSTTwHh7mNxzPf99l6gcA9VuM+2gFBHdvspnW8dBIDmx16iVxK0mAAg==", "picture"=>{"content"=>"ぐでたま", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcadc9ba038 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170918-58236-16llg69.jpg>, @original_filename="gudetama2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "ぐでたま"], ["picture", "gudetama2.jpg"], ["created_at", "2017-09-18 04:19:58.917109"], ["updated_at", "2017-09-18 04:19:58.917109"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 35ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:19:58 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:20:10 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:20:28 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gRoIIV60GWZVREBFrHS/qE2gkLzycK4y1VPMtKDs1VvL7+S9wxFat76fwrr7wwXyrMo54SHsabDpjRnblUNiRQ==", "picture"=>{"content"=>"ぐでたま"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "pictures" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "ぐでたま"], ["created_at", "2017-09-18 04:20:28.663415"], ["updated_at", "2017-09-18 04:20:28.663415"]]
+  [1m[35m (5.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:20:28 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:20:36 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 59.8ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:20:47 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WZYzrFE2CWMt1U54CJD2ybOWfWD0YJTIiWndHK7Cql4TY98wzJNKssYOzIdfJ0yTUvzUPSf8U0q1twhzm20dQA==", "picture"=>{"content"=>"ぐでたま"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "pictures" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "ぐでたま"], ["created_at", "2017-09-18 04:20:48.000765"], ["updated_at", "2017-09-18 04:20:48.000765"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:20:48 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pictures/5" for ::1 at 2017-09-18 13:21:04 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yLT3FjcpI8Z2bRkF+TJ6bzmVdF6bqavNe9TKBsITaBeCQRuKqoxgF522m/quhcA12P/dA0g1bE9HCh9p97zfCQ==", "id"=>"5"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.8ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 12ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:21:04 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pictures/4" for ::1 at 2017-09-18 13:21:10 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3PIpjVlxUeiRcw/F3P4b6W/A6rZf7QFHP12icULEg9aWB8URxNQSOXqojTqLSaGzjqpD64xxxsUDg3ced2s0yA==", "id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 4]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:21:10 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pictures/2" for ::1 at 2017-09-18 13:21:15 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YcTLPXujkJd+P3zMQsXKsoRohfRC41l+rLwpM/i7lrwrMSeh5gbTRpXk/jMVcnDoZQIsqZF/nvyQYvxczRQhog==", "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (1.4ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 11ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:21:15 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-18 13:25:30 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-18 13:25:45 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RoanTj/Q8eoTFd1IaSCueldI28yPYXyCmU8buuDRTvoMc0vSonWyO/jOX7c+lxQgtiJykVz9uwClkc7V1X755A==", "picture"=>{"content"=>"g"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "g"], ["created_at", "2017-09-18 04:25:45.140926"], ["updated_at", "2017-09-18 04:25:45.140926"]]
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 14ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:25:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:28:03 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:28:24 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (169.7ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `pic' for #<#<Class:0x007fcada5b1510>:0x007fcadfa62e10>
+Did you mean?  @pic):
+    10: 	
+    11: 
+    12: <% end %>
+    13: <%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'}, class: 'btn btn-default'%>
+    14: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'},class: 'btn btn-default' %>
+    15: <br><%= link_to "投稿する" , new_picture_path, class: 'btn btn-default post' %>
+    16: </div>
+  app/views/pictures/index.html.erb:13:in `_app_views_pictures_index_html_erb___4412398265510965471_70254656163220'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:28:58 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (10.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (71.8ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 11.2ms)
+
+ActionView::Template::Error (undefined local variable or method `pic' for #<#<Class:0x007fcada5b1510>:0x007fcad9c5c3e8>
+Did you mean?  @pic):
+    10: 	
+    11: 
+    12: <% end %>
+    13: <%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'}, class: 'btn btn-default'%>
+    14: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'},class: 'btn btn-default' %>
+    15: <br><%= link_to "投稿する" , new_picture_path, class: 'btn btn-default post' %>
+    16: </div>
+  app/views/pictures/index.html.erb:13:in `_app_views_pictures_index_html_erb___4412398265510965471_70254656163220'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:29:02 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (49.7ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined local variable or method `pic' for #<#<Class:0x007fcada5b1510>:0x007fcadc372590>
+Did you mean?  @pic):
+    10: 	
+    11: 
+    12: <% end %>
+    13: <%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'}, class: 'btn btn-default'%>
+    14: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'},class: 'btn btn-default' %>
+    15: <br><%= link_to "投稿する" , new_picture_path, class: 'btn btn-default post' %>
+    16: </div>
+  app/views/pictures/index.html.erb:13:in `_app_views_pictures_index_html_erb___4412398265510965471_70254656163220'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:29:08 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (65.9ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined local variable or method `pic' for #<#<Class:0x007fcada5b1510>:0x007fcadc5c7098>
+Did you mean?  @pic):
+    10: 	
+    11: 
+    12: <% end %>
+    13: <%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'}, class: 'btn btn-default'%>
+    14: 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'},class: 'btn btn-default' %>
+    15: <br><%= link_to "投稿する" , new_picture_path, class: 'btn btn-default post' %>
+    16: </div>
+  app/views/pictures/index.html.erb:13:in `_app_views_pictures_index_html_erb___4412398265510965471_70254656163220'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:29:39 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-18 13:43:10 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/pictures/6" for ::1 at 2017-09-19 13:57:17 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a+tx0jhYwNjeWg062ywhfv1T0HwWwjaibOdXgEXnJlIhHp1Opf2DCTWBj8WMm5skHDl5IcVe8SBQOYLvcEiRTA==", "id"=>"6"}
+  [1m[35mUser Load (9.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (22.5ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 6]]
+  [1m[35m (11.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 141ms (ActiveRecord: 44.2ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 13:57:18 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (6.1ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 269ms (Views: 259.1ms | ActiveRecord: 6.3ms)
+
+
+Started DELETE "/pictures/3" for ::1 at 2017-09-19 13:57:23 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qh2z00cjb/k2GV+1kjED7SR10+WZe/E+UOjm14d34Wjg6F9P2oYsKN3C3UrFhrm3xR96uErnNrxsNjO4sthWdg==", "id"=>"3"}
+  [1m[36mUser Load (6.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.9ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.4ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 3]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 31ms (ActiveRecord: 21.3ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 13:57:23 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 134ms (Views: 130.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/pictures/1" for ::1 at 2017-09-19 13:57:31 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sKPCj17SQVVreW0BgfcFjzc/rE2zKQ2KuJHdpWONSXz6Vi4Tw3cChICi7/7WQL/V1lUFEGC1ygiETwjKViL+Yg==", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (3.0ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 15ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 13:57:31 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.8ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 89.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 13:57:52 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 13:58:07 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 13:59:59 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 71ms (Views: 67.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:02:05 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:04:05 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LBuWVVoHaoN/xQhJ7D2aP9BdOnYOy4PfsNb5XVmiIdJm7nrJx6IpUpQeira7iiBlMTeTK91XRF2MCCwybA2WzA==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae273ed30 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-13q5sbd.jpg>, @original_filename="gudetama1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama1.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>""}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered pictures/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 86ms (Views: 69.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:04:23 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OIgvu+1D8pQvAz7jtJRAa0y/axkutIbNF3N8W+KEF4hyfcMncOaxRcTYvBzjI/oxrdXCRP0oQU8rrak01yuglg==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae2616908 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-dkok6t.jpg>, @original_filename="gudetama1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama1.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"gudetama"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "gudetama"], ["picture", "gudetama1.jpg"], ["created_at", "2017-09-19 05:04:23.560981"], ["updated_at", "2017-09-19 05:04:23.560981"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 23ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:04:23 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:04:57 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:07:12 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:07:18 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 62ms (Views: 57.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:08:31 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:10:38 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:11:32 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:11:54 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y/+TgoLVtCwBrlCPLIrLFldVDObbik2dHGhFr0DNGfspCn8eH3D3/ep10nB7PXFMtj+luwgWih8gtpDAdWKu5Q==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae5bb4178 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-nc54hr.jpg>, @original_filename="gudetama10.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama10.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"gudetama"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "gudetama"], ["picture", "gudetama10.jpg"], ["created_at", "2017-09-19 05:11:54.995640"], ["updated_at", "2017-09-19 05:11:54.995640"]]
+  [1m[35m (119.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 135ms (ActiveRecord: 122.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:11:55 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pictures/7" for ::1 at 2017-09-19 14:13:24 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aHP0GpVpJg9q3DCKzbaa40js26aOaJI8gYrbWCXfQg8ihhiGCMxl3oEHsnWaASC5qYZy+130Vb69VA43EHD1EQ==", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (1.0ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 7]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 14ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:13:24 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:14:09 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:14:19 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8i5DguBhTIhgJkzOVaWR4gOp/lICMzy3jzGlHKuHVnNPVWSliTG48pbG8xu4SwdaWQOpJuUC3Di4hP7RwGqRw==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcadf908920 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-ulx7q.jpg>, @original_filename="gudetama7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama7.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"ぐでたま"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "ぐでたま"], ["picture", "gudetama7.jpg"], ["created_at", "2017-09-19 05:14:19.830450"], ["updated_at", "2017-09-19 05:14:19.830450"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 20ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:14:19 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:16:06 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:16:49 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/pictures/8" for ::1 at 2017-09-19 14:17:10 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fRd/xn4yLDcFYbfJC7+y+B/nYgr9PgeEUFzNKqpWpgg34pNa45dv5u66NTZcCAii/o3LVy6iwAZsghhFn/kRFg==", "id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 8]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:17:10 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (3.2ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-19 14:19:51 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/edit.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@pic) do |f| %>
+    2:  <%= f.text_field :content %>
+    3: 
+    4:  <%= f.submit %>
+  app/views/pictures/edit.html.erb:1:in `_app_views_pictures_edit_html_erb__2432619349025662457_70254701892580'
+
+
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:20:13 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:20:22 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dBUozrm0uVj/zi+uGiuz3NguuBtvzmKTSoMq9F1xooM+4MRSJBH6iRQVrVFNnAmGOUQRRrxSpRF2Xf+baN4VnQ==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae5773a00 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-2p0z9p.jpg>, @original_filename="gudetama7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama7.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"dede"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "dede"], ["picture", "gudetama7.jpg"], ["created_at", "2017-09-19 05:20:22.747031"], ["updated_at", "2017-09-19 05:20:22.747031"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 26ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:20:22 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:20:33 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:20:39 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EYV4MuMcKqS9jtPfo6J3xzh7U/vKNbzrxnsMJNpEDXhbcJSufrlpdVZVUSD0Fc2d2RH6phmpe2n6pdlL7+u6Zg==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae2b1ac10 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-s9tzx9.jpg>, @original_filename="gudetama8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama8.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>""}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered pictures/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 50.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:20:50 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PLhXiRkqquByhqQ0pgX9B4UjJfTEkcNv3a5NFZnuSNJ2TbsVhI/pMZldJsvxskddZEmMqRcNBO3hcJh6rEH/zA==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae6a38780 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-aodjo6.jpg>, @original_filename="gudetama8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama8.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"d"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "d"], ["picture", "gudetama8.jpg"], ["created_at", "2017-09-19 05:20:51.011499"], ["updated_at", "2017-09-19 05:20:51.011499"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 19ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:20:51 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:26:08 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 97ms (Views: 93.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c3b0ebb4db486fdc711b83f77993b3148eb93e2ea441ad5bc6622a578ecffa0c.css?body=1" for ::1 at 2017-09-19 14:26:08 +0900
+
+
+Started DELETE "/pictures/11" for ::1 at 2017-09-19 14:30:34 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C9UHywdlna5feX0UQ+/gNF4eLcWkp9sTIU3cIkT0ritBIOtXmsDef7Si/+sUWFpuv3SEmHc7HJEdkwlNcVsZNQ==", "id"=>"11"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 11]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:30:34 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-c3b0ebb4db486fdc711b83f77993b3148eb93e2ea441ad5bc6622a578ecffa0c.css?body=1" for ::1 at 2017-09-19 14:30:34 +0900
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:31:25 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:31:34 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfZBmCHa8+PZoObZPX5etWQ1qCrV4vne0LwzFLb+jpnvA60EvH+wMjJ7ZCZqyeTvhV8BdwZ+PlzsYuZ7g1E5hw==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae13fd208 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-brfnz8.jpg>, @original_filename="gudetama2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"a"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "a"], ["picture", "gudetama2.jpg"], ["created_at", "2017-09-19 05:31:34.024871"], ["updated_at", "2017-09-19 05:31:34.024871"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 15ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:31:34 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:31:37 +0900
+Processing by PicturesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:31:45 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfIDnoQV3eJl5+gUiKSYFOoZnHkcfdFMrO81o9e0JOJTB+8CGbCeM448auvfEyJOC3M1JM/hFs6QMeDM4huT/A==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcad8b95758 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-1itu16t.jpg>, @original_filename="gudetama3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"a"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "a"], ["picture", "gudetama3.jpg"], ["created_at", "2017-09-19 05:31:45.756608"], ["updated_at", "2017-09-19 05:31:45.756608"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 15ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:31:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:31:51 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T580FJsj0U1pWQifGmh9DccBbRTY7g1nlvW2XvpEaWIFatiIBoaSnIKCimBN38dXJmvESQtyyuWqK2Mxz+vefA==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcad8e61658 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-1hdoxxb.jpg>, @original_filename="gudetama3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"a"}, "commit"=>"登録する"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "a"], ["picture", "gudetama3.jpg"], ["created_at", "2017-09-19 05:31:51.409815"], ["updated_at", "2017-09-19 05:31:51.409815"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 16ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:31:51 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures/new" for ::1 at 2017-09-19 14:32:04 +0900
+Processing by PicturesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pictures" for ::1 at 2017-09-19 14:32:12 +0900
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TqGuFyVP8PISgGAkvlhvh51R0hiPPpAB7voNCVyAXn0EVEKLuOqzI/lb4tvp79XdfDt7RVyiV4PSJNhmaS/pYw==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae4892ea0 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170919-58236-17a2rv6.jpg>, @original_filename="gudetama5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"a"}, "commit"=>"登録する"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pictures" ("content", "picture", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["content", "a"], ["picture", "gudetama5.jpg"], ["created_at", "2017-09-19 05:32:12.470353"], ["updated_at", "2017-09-19 05:32:12.470353"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 16ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:32:12 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-19 14:41:55 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 92ms (Views: 53.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-19 14:42:00 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered pictures/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-19 14:43:25 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.1ms)
+
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started DELETE "/pictures/15" for ::1 at 2017-09-20 10:23:00 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"58+2l6ZyLopdchnyIAxy8yS0nCWqmY/c3QQ8t0NY9YGtOloLO9dtW7apmw13u8ipxd41eHkFSF7h2unYdvdCnw==", "id"=>"15"}
+  [1m[36mUser Load (27.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36m (6.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.1ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 15]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 176ms (ActiveRecord: 93.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:23:00 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 232ms (Views: 227.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/pictures/14" for ::1 at 2017-09-20 10:23:11 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nojJDCZvkCsJIaRTFEqAzQh9He2bt0USlCo8ZY+kHXnUfSWQu8rT+uL6JqxD/TqX6Re0sEgrgpCo9OkKuguqZw==", "id"=>"14"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mDELETE FROM "pictures" WHERE "pictures"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 11ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:23:11 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/pictures/13" for ::1 at 2017-09-20 10:23:28 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T6kbV2Br+cWPgz9+qQUvenTrhAOcJDZg402eKTC8sLoFXPfL/c66FGRYvYH+spUglYEtXk+48eLfk0tGBRMHpA==", "id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 13]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:23:28 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:27:00 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/12/edit" for ::1 at 2017-09-20 10:27:04 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started GET "/pictures/12/edit" for ::1 at 2017-09-20 10:28:33 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered pictures/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 92ms (Views: 56.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:28:39 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 10:28:50 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vajrchR4c1KcYkG5OMaV3kbzESEAVYbOSLlXiFZJIuD3XQfuid0wg3e5w0ZvcS+Ep5m4fNPJQUx0Z4LnY+aV/g==", "picture"=>{"content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:28:50 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:30:54 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:31:15 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:35:38 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.8ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 73ms (Views: 67.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:37:21 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 148ms (Views: 143.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/pictures.self-c930968b9f8cd58d6e2760fc34b41a06ff45e29fd30dd876dc3548bcffb6160a.css?body=1" for ::1 at 2017-09-20 10:37:22 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:37:51 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.8ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/pictures.self-c930968b9f8cd58d6e2760fc34b41a06ff45e29fd30dd876dc3548bcffb6160a.css?body=1" for ::1 at 2017-09-20 10:37:51 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:42:13 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     9:  <div class="row">
+    10: 	<%= image_tag (pic.picture_url) %><br>
+    11: 	<!-- <div class="comment"> -->
+    12: 	 <%= pic.content class: 'form-control'%><br>
+    13: 	 <!-- </div> -->
+    14: 	
+    15:     <%= link_to "編集" , edit_picture_path(pic.id), class: 'btn btn-default'%>
+  app/views/pictures/index.html.erb:12:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+  app/views/pictures/index.html.erb:8:in `_app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+
+
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:42:15 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 151ms (Views: 146.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/pictures.self-15b30dc963644064cd907aab6c802463734f2e2abc5652441127d3fdd9ab7975.css?body=1" for ::1 at 2017-09-20 10:42:15 +0900
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 10:43:50 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bQJsJuuCyVsIhkr4wB0hB0LXPwsQ4kn3g7/6I1WYowYn94C6dieKiuNdyAeXqptdo72WVsN+jnW/YS9MYDcUGA==", "picture"=>{"content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:43:50 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     9:  <div class="row">
+    10: 	<%= image_tag (pic.picture_url) %><br>
+    11: 	<!-- <div class="comment"> -->
+    12: 	 <%= pic.content class: 'form-control'%><br>
+    13: 	 <!-- </div> -->
+    14: 	
+    15:     <%= link_to "編集" , edit_picture_path(pic.id), class: 'btn btn-default'%>
+  app/views/pictures/index.html.erb:12:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+  app/views/pictures/index.html.erb:8:in `_app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+
+
+
+
+Started GET "/assets/pictures.self-15b30dc963644064cd907aab6c802463734f2e2abc5652441127d3fdd9ab7975.css?body=1" for ::1 at 2017-09-20 10:43:52 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:43:52 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     9:  <div class="row">
+    10: 	<%= image_tag (pic.picture_url) %><br>
+    11: 	<!-- <div class="comment"> -->
+    12: 	 <%= pic.content class: 'form-control'%><br>
+    13: 	 <!-- </div> -->
+    14: 	
+    15:     <%= link_to "編集" , edit_picture_path(pic.id), class: 'btn btn-default'%>
+  app/views/pictures/index.html.erb:12:in `block in _app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+  app/views/pictures/index.html.erb:8:in `_app_views_pictures_index_html_erb___4412398265510965471_70254708559000'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:44:07 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (1.8ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/pictures/12" for ::1 at 2017-09-20 10:44:13 +0900
+Processing by PicturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JDbv1R0ytzjlW7MbXu8BvCA7L/51tjidd1WrRc2Kg9puwwNJgJf06Q6AMeQJWLvmwVGGo6Yq/x9Li34q+CU0xA==", "id"=>"12"}
+  [1m[36mUser Load (15.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (3.7ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "pictures" WHERE "pictures"."id" = $1  [["id", 12]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 32ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:44:13 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:44:16 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (1.0ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 70ms (Views: 65.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:46:13 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 150ms (Views: 146.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/pictures.self-4b9653843e9dff7f4499eacef1a17dfc75f6fad7c67a43e6dc6b22ac89d7dd1e.css?body=1" for ::1 at 2017-09-20 10:46:13 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:50:08 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 137ms (Views: 131.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pictures.self-4b9653843e9dff7f4499eacef1a17dfc75f6fad7c67a43e6dc6b22ac89d7dd1e.css?body=1" for ::1 at 2017-09-20 10:50:09 +0900
+
+
+Started GET "/assets/application.self-765fc1486afe24deb6c8b4611424d9841e6675503685580737062b7f0d4697dc.css?body=1" for ::1 at 2017-09-20 10:50:09 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:50:10 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-765fc1486afe24deb6c8b4611424d9841e6675503685580737062b7f0d4697dc.css?body=1" for ::1 at 2017-09-20 10:50:11 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:51:37 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 104ms (Views: 99.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-739ed3e1050d0892ca92b59ad39333d76385eb412f2d66d7146e93b190fdf395.css?body=1" for ::1 at 2017-09-20 10:51:38 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:52:52 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (1.1ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 117ms (Views: 112.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/pictures.self-26879ac6c1a2ad80f6d07875385e807c6d8109f6f55fe1f19bc6c6f32d9e3385.css?body=1" for ::1 at 2017-09-20 10:52:52 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:53:10 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 117ms (Views: 114.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/pictures.self-4b1fa743d8d2494db507c699f55a9425f8365e2237c0750e52d2baff4c827cce.css?body=1" for ::1 at 2017-09-20 10:53:10 +0900
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 10:53:25 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PdWmUXczf/1Y97mZOa8F7IorywQApqGPK3zhWL79F/J3IErN6pY8LLMsO2ZuGL+2a0FiWdM6Zg0XojQ3i1Kg7A==", "picture"=>{"content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:53:25 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.8ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pictures.self-4b1fa743d8d2494db507c699f55a9425f8365e2237c0750e52d2baff4c827cce.css?body=1" for ::1 at 2017-09-20 10:53:26 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:54:41 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.8ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...する", new_picture_path class: 'btn-default' );@output_buff...
+...                                ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze; @pic.each do |pic| 
+                      ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:54:51 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.8ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 74ms (Views: 68.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 10:54:54 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:55:02 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...する", new_picture_path class: 'btn btn-default' );@output_...
+...                                ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze; @pic.each do |pic| 
+                      ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:55:40 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pictures/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...する", new_picture_path class: 'btn btn-default' );@output_...
+...                                ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze; @pic.each do |pic| 
+                      ^
+/Users/ichinomiyayuriko/workspace/insta/app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/pictures/index.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+  app/views/pictures/index.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/pictures/index.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:55:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 63ms (Views: 57.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:56:12 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:57:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pictures.self-d1c16e8c3b1e3dbf120ba9f2d25dd1e252102253a71c7b3bf9e45d3a006a89d8.css?body=1" for ::1 at 2017-09-20 10:57:45 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 10:57:59 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.5ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 106ms (Views: 103.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pictures.self-9b3a77010df0be4ec05a042a02256c56d0a43d285534ad47028db649b8defa29.css?body=1" for ::1 at 2017-09-20 10:58:00 +0900
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-20 10:58:15 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 9]]
+  Rendered pictures/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 58ms (Views: 54.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-20 11:03:00 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 24ms (ActiveRecord: 3.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Picture with 'id'=):
+  app/controllers/pictures_controller.rb:29:in `edit'
+
+
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 11:03:15 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Ufg+Ia20nJ/PjJMftJAtBf6dazF2Wwq6/8c9TLa4EKzsgxkGxORo5TlsLMpZfru9pDc8RZFq6jXIcmaB3VXXA==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae203b7e0 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170920-58236-lc9jsg.jpg>, @original_filename="gudetama8.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama8.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (12.3ms)[0m  [1mUPDATE "pictures" SET "picture" = $1, "updated_at" = $2 WHERE "pictures"."id" = $3[0m  [["picture", "gudetama8.jpg"], ["updated_at", "2017-09-20 02:03:15.263191"], ["id", 10]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 38ms (ActiveRecord: 18.6ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:03:15 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/pictures.self-9b3a77010df0be4ec05a042a02256c56d0a43d285534ad47028db649b8defa29.css?body=1" for ::1 at 2017-09-20 11:03:15 +0900
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 11:03:19 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.9ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 8ms (ActiveRecord: 3.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Picture with 'id'=):
+  app/controllers/pictures_controller.rb:29:in `edit'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:08:51 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 42.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 11:08:53 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (6.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 6.2ms)
+
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:09:43 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 83ms (Views: 49.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 11:09:46 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (11.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 66ms (Views: 49.1ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 11:14:26 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 107ms (Views: 73.5ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 11:14:34 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0RLwuw3ZHZmFbzVplLVzqZPk0CDUG1disZzpvInx7nib5xwnkHxeSG60t5bDAsnzco55fQeHkOCNQjzTvF5ZZg==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae4800668 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170920-58236-geulxb.jpg>, @original_filename="gudetama10.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama10.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.2ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "pictures" SET "picture" = $1, "updated_at" = $2 WHERE "pictures"."id" = $3[0m  [["picture", "gudetama10.jpg"], ["updated_at", "2017-09-20 02:14:34.388612"], ["id", 10]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 27ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:14:34 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 11:14:44 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered pictures/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 70ms (Views: 63.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/pictures/10" for ::1 at 2017-09-20 11:14:54 +0900
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g8n46IsnMU9UXIjs8D3M3bNS3+7BDxvNKQxN4FodfH3JPBR0FoJynr+HChOninaHUjh2sxKT3E8V0piPb7LLYw==", "picture"=>{"picture"=>#<ActionDispatch::Http::UploadedFile:0x007fcae2f5bb30 @tempfile=#<Tempfile:/var/folders/9x/39_478j917jfc47q81gxlz400000gn/T/RackMultipart20170920-58236-qdf1d0.jpg>, @original_filename="gudetama4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"gudetama4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "content"=>"dede"}, "commit"=>"更新する", "id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "pictures" SET "picture" = $1, "updated_at" = $2 WHERE "pictures"."id" = $3[0m  [["picture", "gudetama4.jpg"], ["updated_at", "2017-09-20 02:14:54.391867"], ["id", 10]]
+  [1m[35m (6.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/pictures
+Completed 302 Found in 26ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:14:54 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:15:57 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.9ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 135ms (Views: 130.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/pictures.self-f0290b7ab37bc6ab8abe266dd03a582ec87f8702ce1774eac0923a2c2d79d3af.css?body=1" for ::1 at 2017-09-20 11:15:57 +0900
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 11:25:56 +0900
+Processing by PicturesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPicture Load (0.4ms)[0m  SELECT "pictures".* FROM "pictures"
+  Rendered pictures/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 102ms (Views: 76.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/pictures.self-f0290b7ab37bc6ab8abe266dd03a582ec87f8702ce1774eac0923a2c2d79d3af.css?body=1" for ::1 at 2017-09-20 11:25:56 +0900
+
+
+Started GET "/pictures/9/edit" for ::1 at 2017-09-20 11:25:58 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.3ms)
+
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 15:55:35 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.4ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 210ms (Views: 131.1ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 15:55:38 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.3ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Picture with 'id'=):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started GET "/pictures/10/edit" for ::1 at 2017-09-20 15:55:42 +0900
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (0.5ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 8ms (ActiveRecord: 1.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Picture with 'id'=):
+  app/controllers/pictures_controller.rb:28:in `edit'
+
+
+
+
+Started GET "/pictures" for ::1 at 2017-09-20 15:55:45 +0900
+Processing by PicturesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPicture Load (15.9ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 220ms (Views: 200.2ms | ActiveRecord: 16.2ms)

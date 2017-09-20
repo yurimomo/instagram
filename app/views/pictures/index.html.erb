@@ -1,14 +1,21 @@
+<div class="container">
+ <div class="wrapper col-md-8 col-md-offset-2">
 <p><%= notice %></p>
 
-
+<%= link_to "投稿する", new_picture_path, class: 'btn btn-default post' %>
 <h2>Picture一覧</h2>
 
 <% @pic.each do |pic| %>
-	<%= image_tag(picture.picture) %>
-
-	<%= link_to "編集" , edit_picture_path(pic.id), data: { confirm: '本当に編集していいですか？'} %>
-	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に編集していいですか？'} %>
-
+ <div class="row">
+	<%= image_tag (pic.picture_url) %><br>
+	<!-- <div class="comment"> -->
+	 <%= pic.content %><br>
+	 <!-- </div> -->
+	
+    <%= link_to "編集" , edit_picture_path(pic.id), class: 'btn btn-default'%>
+	
+	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に削除していいですか？'},class: 'btn btn-default' %>
+	</div>
 <% end %>
-
-<br><%= link_to "投稿する" , new_picture_path %>
+</div>
+</div>
