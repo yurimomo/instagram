@@ -11,7 +11,7 @@
        </ul>
        </div>
        <% end %>
-
+       <%= link_to "一覧" , pictures_path, class: 'btn btn-default' %>
   <div class="container">
   <div class="col-md-8 col-md-offset-2">
    <%= form_for(@pic) do |f| %>
@@ -28,6 +28,6 @@
  </div>
  <% end %>
 
-<%= link_to "一覧" , pictures_path %>
+
 </div>
 </div>
