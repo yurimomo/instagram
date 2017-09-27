@@ -8,11 +8,13 @@
 <% @pic.each do |pic| %>
  <div class="row">
  
-
+    <form>
 	<%= image_tag (pic.picture_url) %><br>
 	<!-- <div class="comment"> -->
+	 <div class="text">
 	 <%= pic.content %><br>
-	 <!-- </div> -->
+	 </div>
+	 
 	 <div class="profile">
 	 <div class="profile_img">
 	  <%= profile_img(pic.user) %>
@@ -29,5 +31,6 @@
 	<%= link_to "削除" , picture_path(pic.id), method: :delete, data: { confirm: '本当に削除していいですか？'},class: 'btn btn-default' %>
 	</div>
 <% end %>
+</form>
 </div>
 </div>
